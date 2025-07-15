@@ -1,91 +1,123 @@
-# Free Tailwind landing page template
+# All Ways Home - House & Pet Sitting Services
 
-![Simple TailwindCSS template preview](https://github.com/cruip/tailwind-landing-page-template/assets/2683512/f9a98fab-a1bc-4fb5-8572-4de0b6bd932a)
+![All Ways Home](public/images/allwayshomelogo.png)
 
-**Simple Light** is a free landing page template built on top of **TailwindCSS** and fully coded in **React** / **Next.js**. Simple light is designed to provide all the basic components a developer need to create a landing page for SaaS products, online services, and more.
+**All Ways Home** is a professional house and pet sitting service based in Ireland, offering reliable, caring, and experienced home care services. This is the official website built with Next.js and TailwindCSS.
 
-**UPDATE 2025-02-04** Added Tailwind v4 support!
+## 🏠 About All Ways Home
 
-Use it for whatever you want, and be sure to reach us out on X if you build anything cool/useful with it.
-Created and maintained with ❤️ by [Cruip.com](https://cruip.com/).
+We're a mature, experienced couple offering bespoke home and pet care across Ireland. After years of trusted house sits, we now offer professional, paid services under our own name.
 
-_Version 1.3.3 built with Tailwind CSS and React + Vite is available [here](https://github.com/cruip/tailwind-landing-page-template/releases/tag/1.3.3)._
+### Our Services
 
-## Live demo
+- **🐾 Pet Care** - Feeding, walks, companionship, and love for your furry family members
+- **🏠 House Care** - Plants, bins, laundry, post collection, and maintaining your home
+- **🔒 Security Presence** - Occupied look for your home, giving you complete peace of mind
+- **⭐ Custom Extras** - We adapt to your specific needs and requirements
 
-Check the live demo here 👉️ [https://simple.cruip.com/](https://simple.cruip.com/)
+### Why Choose Us
 
-## Simple Pro
+- ✅ **Fully Insured** - Complete peace of mind with comprehensive insurance coverage
+- 🏆 **Experienced** - Years of trusted house sitting experience across Ireland
+- 💚 **Caring** - Your pets and home receive the same love and care as our own
 
-[![Simple Pro](https://github.com/cruip/tailwind-landing-page-template/assets/2683512/992be2ba-3de7-4838-be41-12e85686c193)](https://cruip.com/)
+## 🚀 Technical Stack
 
-## Design files
+- **Framework**: Next.js 15.1.6 with App Router
+- **Language**: TypeScript 5.7.3
+- **Styling**: TailwindCSS 4.0.3
+- **Animations**: AOS (Animate On Scroll)
+- **Forms**: Web3Forms API integration
+- **Hosting**: Ready for deployment on Vercel or similar platforms
 
-If you need the design files, you can download them from Figma's Community 👉 https://bit.ly/3HOZMpf
-
-## Usage
-
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## 🛠️ Development
 
 ### Getting Started
 
-First, run the development server:
-
 ```bash
+# Install dependencies
+npm install
+
+# Run development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+
+# Build for production
+npm run build
+
+# Start production server
+npm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view the website.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Project Structure
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+```
+├── app/                    # Next.js app directory
+│   ├── (auth)/            # Authentication pages
+│   ├── (default)/         # Main site pages
+│   ├── api/               # API routes
+│   └── css/               # Global styles
+├── components/            # React components
+│   ├── ui/               # UI components (header, footer, etc.)
+│   └── ...               # Page-specific components
+├── public/               # Static assets
+│   └── images/           # Images and icons
+└── utils/                # Utility functions
+```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## 🎨 Design System
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+The website uses a custom "Homestead" color palette:
 
-### Learn More
+- **Base**: `#f8f5f2` - Warm, welcoming background
+- **Heading**: `#386641` - Deep forest green for headings
+- **Secondary**: `#6a994e` - Medium green for secondary elements
+- **Accent**: `#a7c957` - Bright lime for accents and highlights
 
-To learn more about Next.js, take a look at the following resources:
+## 🔐 Security Features
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Spam Protection**: Multi-layer spam detection for contact forms
+- **Email Obfuscation**: Protected email addresses from scraping
+- **Rate Limiting**: Form submission rate limiting
+- **CAPTCHA**: Math-based verification system
+- **Honeypot Fields**: Hidden fields to catch bots
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## 📱 Features
 
-### Deploy on Vercel
+- **Responsive Design**: Mobile-first approach for all devices
+- **SEO Optimized**: Comprehensive metadata and Open Graph tags
+- **Performance**: Optimized images and lazy loading
+- **Accessibility**: ARIA labels and keyboard navigation
+- **Social Media**: Links to Facebook, Instagram, LinkedIn, and Bluesky
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🌐 Deployment
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+The website is configured for deployment on Vercel:
 
-### Support notes
+```bash
+# Deploy to production
+npm run build
+```
 
-This template has been developed with the App Router (`app`) and React Server Components. If you’re unfamiliar with these beta features, you can find more information about them on the Next.js beta documentation page. So, please note that any request dealing with React (e.g. extra features, customisations, et cetera) is to be considered out of the support scope.
+Environment variables needed:
 
-For more information about what support covers, please see our (FAQs)[https://cruip.com/faq/].
+- `NEXT_PUBLIC_WEB3FORMS_KEY` - Web3Forms API key for contact form
 
-## Credits
+## 📞 Contact
 
-- [Nucleo](https://nucleoapp.com/)
+- **Website**: [https://allwayshome.ie](https://allwayshome.ie)
+- **Email**: Available through contact form (spam-protected)
+- **Facebook**: [@AllWaysHomeIE](https://www.facebook.com/people/All-Ways-Home-IE/61578356010210/)
+- **Instagram**: [@allwayshomeie](https://www.instagram.com/allwayshomeie/)
+- **LinkedIn**: [All Ways Home IE](https://www.linkedin.com/company/all-ways-home-ie)
 
-## Terms and License
+## 📄 License
 
-- Released under the [GPL](https://www.gnu.org/licenses/gpl-3.0.html).
-- Copyright 2024 [Cruip](https://cruip.com/).
-- Use it for personal and commercial projects, but please don’t republish, redistribute, or resell the template.
-- Attribution is not required, although it is really appreciated.
+All Rights Reserved - All Ways Home © 2025
 
-## About Us
+This website and its content are proprietary to All Ways Home house and pet sitting services.
 
-We're an Italian developer/designer duo creating high-quality design/code resources for developers, makers, and startups.
+---
 
-## Stay in the loop
-
-If you would like to know when we release new resources, you can follow [@pacovitiello](https://x.com/pacovitiello) and [@DavidePacilio](https://x.com/DavidePacilio) on X, or you can subscribe to our [newsletter](https://cruip.com/newsletter/).
-
+_Professional house and pet sitting services across Ireland - Your home secure, your pets happy_ 🏠🐾❤️
