@@ -9,9 +9,33 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: 'All Ways Home - House & Pet Sitting Services Ireland',
+  title: 'All Ways Home – Trusted House & Pet Sitting in Ireland',
   description:
-    'Professional house and pet sitting services across Ireland. Reliable, trustworthy, and caring for your home and beloved pets.',
+    'Reliable, caring house and pet sitting service in Ireland. Experienced, professional, and personal care for your home and pets.',
+  openGraph: {
+    title: 'All Ways Home – Trusted House & Pet Sitting in Ireland',
+    description:
+      'Reliable, caring house and pet sitting service in Ireland. Experienced, professional, and personal care for your home and pets.',
+    type: 'website',
+    locale: 'en_IE',
+    url: 'https://allwayshome.ie',
+    siteName: 'All Ways Home',
+    images: [
+      {
+        url: '/images/allwayshomelogo.png',
+        width: 1200,
+        height: 630,
+        alt: 'All Ways Home - Trusted House & Pet Sitting in Ireland',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'All Ways Home – Trusted House & Pet Sitting in Ireland',
+    description:
+      'Reliable, caring house and pet sitting service in Ireland. Experienced, professional, and personal care for your home and pets.',
+    images: ['/images/allwayshomelogo.png'],
+  },
 };
 
 export default function RootLayout({

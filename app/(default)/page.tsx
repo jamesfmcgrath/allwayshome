@@ -1,7 +1,7 @@
 export const metadata = {
-  title: 'All Ways Home - Trusted House & Pet Sitting Services Ireland',
+  title: 'All Ways Home – Trusted House & Pet Sitting in Ireland',
   description:
-    "Professional house and pet sitting services across Ireland. Peace of mind for your home and beloved pets while you're away.",
+    'Reliable, caring house and pet sitting service in Ireland. Experienced, professional, and personal care for your home and pets.',
 };
 
 import AboutUs from '@/components/about-us';

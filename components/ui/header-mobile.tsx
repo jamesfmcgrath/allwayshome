@@ -51,14 +51,6 @@ export default function Header() {
                   Contact Us
                 </a>
               </li>
-              <li>
-                <a
-                  href="mailto:info@allwayshome.ie"
-                  className="btn-sm btn-homestead-primary shadow-sm"
-                >
-                  Get Quote
-                </a>
-              </li>
             </ul>
 
             {/* Mobile menu button placeholder */}
@@ -117,14 +109,6 @@ export default function Header() {
                 className="btn-sm btn-homestead-secondary shadow-sm"
               >
                 Contact Us
-              </a>
-            </li>
-            <li>
-              <a
-                href="mailto:info@allwayshome.ie"
-                className="btn-sm btn-homestead-primary shadow-sm"
-              >
-                Get Quote
               </a>
             </li>
           </ul>
@@ -186,13 +170,6 @@ export default function Header() {
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Contact Us
-              </a>
-              <a
-                href="mailto:info@allwayshome.ie"
-                className="block text-center btn-sm btn-homestead-primary shadow-sm"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                Get Quote
               </a>
             </div>
           </div>

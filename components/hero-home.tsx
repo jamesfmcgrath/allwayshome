@@ -34,7 +34,7 @@ export default function HeroHome() {
                 >
                   <a
                     className="btn group mb-4 w-full btn-homestead-primary shadow-sm sm:mb-0 sm:w-auto"
-                    href="mailto:info@allwayshome.ie"
+                    href="#contact"
                   >
                     <span className="relative inline-flex items-center">
                       Get in Touch{' '}

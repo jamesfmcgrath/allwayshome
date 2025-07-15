@@ -10,7 +10,7 @@ export default function Footer({ border = false }: { border?: boolean }) {
           className={`grid gap-10 py-8 sm:grid-cols-12 md:py-12 ${border ? 'border-t [border-image:linear-gradient(to_right,transparent,var(--color-slate-200),transparent)1]' : ''}`}
         >
           {/* 1st block */}
-          <div className="space-y-2 sm:col-span-12 lg:col-span-4">
+          <div className="space-y-2 sm:col-span-12 lg:col-span-8">
             <div>
               <Logo />
             </div>
@@ -21,154 +21,7 @@ export default function Footer({ border = false }: { border?: boolean }) {
           </div>
 
           {/* 2nd block */}
-          <div className="space-y-2 sm:col-span-6 md:col-span-3 lg:col-span-2">
-            <h3 className="text-sm font-medium text-homestead-heading">
-              Services
-            </h3>
-            <ul className="space-y-2 text-sm">
-              <li>
-                <Link
-                  className="text-gray-600 transition hover:text-homestead-heading"
-                  href="#0"
-                >
-                  House Sitting
-                </Link>
-              </li>
-              <li>
-                <Link
-                  className="text-gray-600 transition hover:text-homestead-heading"
-                  href="#0"
-                >
-                  Pet Sitting
-                </Link>
-              </li>
-              <li>
-                <Link
-                  className="text-gray-600 transition hover:text-homestead-heading"
-                  href="#0"
-                >
-                  Dog Walking
-                </Link>
-              </li>
-              <li>
-                <Link
-                  className="text-gray-600 transition hover:text-homestead-heading"
-                  href="#0"
-                >
-                  Plant Care
-                </Link>
-              </li>
-              <li>
-                <Link
-                  className="text-gray-600 transition hover:text-homestead-heading"
-                  href="#0"
-                >
-                  Mail Collection
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          {/* 3rd block */}
-          <div className="space-y-2 sm:col-span-6 md:col-span-3 lg:col-span-2">
-            <h3 className="text-sm font-medium text-homestead-heading">
-              Company
-            </h3>
-            <ul className="space-y-2 text-sm">
-              <li>
-                <Link
-                  className="text-gray-600 transition hover:text-homestead-heading"
-                  href="#0"
-                >
-                  About Us
-                </Link>
-              </li>
-              <li>
-                <Link
-                  className="text-gray-600 transition hover:text-homestead-heading"
-                  href="#0"
-                >
-                  Why Choose Us
-                </Link>
-              </li>
-              <li>
-                <Link
-                  className="text-gray-600 transition hover:text-homestead-heading"
-                  href="#0"
-                >
-                  Testimonials
-                </Link>
-              </li>
-              <li>
-                <Link
-                  className="text-gray-600 transition hover:text-homestead-heading"
-                  href="#0"
-                >
-                  Insurance
-                </Link>
-              </li>
-              <li>
-                <Link
-                  className="text-gray-600 transition hover:text-homestead-heading"
-                  href="#0"
-                >
-                  Coverage Areas
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          {/* 4th block */}
-          <div className="space-y-2 sm:col-span-6 md:col-span-3 lg:col-span-2">
-            <h3 className="text-sm font-medium text-homestead-heading">
-              Support
-            </h3>
-            <ul className="space-y-2 text-sm">
-              <li>
-                <Link
-                  className="text-gray-600 transition hover:text-homestead-heading"
-                  href="#0"
-                >
-                  Contact Us
-                </Link>
-              </li>
-              <li>
-                <Link
-                  className="text-gray-600 transition hover:text-homestead-heading"
-                  href="#0"
-                >
-                  FAQ
-                </Link>
-              </li>
-              <li>
-                <Link
-                  className="text-gray-600 transition hover:text-homestead-heading"
-                  href="#0"
-                >
-                  Terms of Service
-                </Link>
-              </li>
-              <li>
-                <Link
-                  className="text-gray-600 transition hover:text-homestead-heading"
-                  href="#0"
-                >
-                  Privacy Policy
-                </Link>
-              </li>
-              <li>
-                <Link
-                  className="text-gray-600 transition hover:text-homestead-heading"
-                  href="#0"
-                >
-                  Emergency Contact
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          {/* 5th block */}
-          <div className="space-y-2 sm:col-span-6 md:col-span-3 lg:col-span-2">
+          <div className="space-y-2 sm:col-span-6 md:col-span-3 lg:col-span-4">
             <h3 className="text-sm font-medium text-homestead-heading">
               Connect
             </h3>
@@ -222,18 +75,6 @@ export default function Footer({ border = false }: { border?: boolean }) {
               </li>
             </ul>
           </div>
-        </div>
-      </div>
-
-      {/* Big text */}
-      <div className="relative -mt-16 h-60 w-full" aria-hidden="true">
-        <div className="pointer-events-none absolute left-1/2 -z-10 -translate-x-1/2 text-center text-[348px] font-bold leading-none before:bg-linear-to-b before:from-gray-200 before:to-gray-100/30 before:to-80% before:bg-clip-text before:text-transparent before:content-['Simple'] after:absolute after:inset-0 after:bg-gray-300/70 after:bg-clip-text after:text-transparent after:mix-blend-darken after:content-['Simple'] after:[text-shadow:0_1px_0_white]"></div>
-        {/* Glow */}
-        <div
-          className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-2/3"
-          aria-hidden="true"
-        >
-          <div className="h-56 w-56 rounded-full border-[20px] border-blue-700 blur-[80px]"></div>
         </div>
       </div>
     </footer>
