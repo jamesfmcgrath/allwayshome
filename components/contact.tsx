@@ -318,15 +318,14 @@ export default function Contact() {
                       <h4 className="font-medium text-homestead-heading">
                         Email
                       </h4>
-                      {!showEmail ? (
+                      {!showEmail ?
                         <button
                           onClick={() => setShowEmail(true)}
                           className="text-homestead-secondary hover:text-homestead-heading cursor-pointer bg-transparent border-none underline text-left p-0"
                         >
                           Click to reveal email
                         </button>
-                      ) : (
-                        <div className="space-y-2">
+                      : <div className="space-y-2">
                           <a
                             href={`mailto:${getObfuscatedEmail()}`}
                             className="text-homestead-secondary hover:text-homestead-heading block"
@@ -340,7 +339,7 @@ export default function Contact() {
                             Hide email
                           </button>
                         </div>
-                      )}
+                      }
                     </div>
                   </div>
 
