@@ -1,0 +1,69 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+
+# Prevent email harvesting
+Disallow: /contact
+Disallow: /*email*
+Disallow: /*mailto*
+
+# Common spam bot patterns
+User-agent: EmailCollector
+Disallow: /
+
+User-agent: EmailSiphon
+Disallow: /
+
+User-agent: WebBandit
+Disallow: /
+
+User-agent: EmailWolf
+Disallow: /
+
+User-agent: ExtractorPro
+Disallow: /
+
+User-agent: CherryPicker
+Disallow: /
+
+User-agent: EmailExtractor
+Disallow: /
+
+User-agent: EmailSweep
+Disallow: /
+
+User-agent: WebSauger
+Disallow: /
+
+User-agent: WebCopier
+Disallow: /
+
+User-agent: NetAttache
+Disallow: /
+
+User-agent: Offline Explorer
+Disallow: /
+
+User-agent: HTTrack
+Disallow: /
+
+User-agent: TeleportPro
+Disallow: /
+
+User-agent: WebReaper
+Disallow: /
+
+User-agent: WebStripper
+Disallow: /
+
+User-agent: WebWhacker
+Disallow: /
+
+User-agent: WebZIP
+Disallow: /
+
+# Sitemap location
+Sitemap: https://allwayshome.ie/sitemap.xml
+
+# Crawl delay to prevent aggressive scraping
+Crawl-delay: 1
