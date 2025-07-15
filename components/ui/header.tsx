@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import Logo from './logo';
 
 export default function Header() {
@@ -17,20 +16,36 @@ export default function Header() {
           {/* Desktop navigation links */}
           <ul className="flex flex-1 items-center justify-end gap-3">
             <li>
-              <Link
-                href="/contact"
+              <a
+                href="#services"
+                className="text-sm text-gray-700 hover:text-homestead-heading transition-colors"
+              >
+                Services
+              </a>
+            </li>
+            <li>
+              <a
+                href="#about"
+                className="text-sm text-gray-700 hover:text-homestead-heading transition-colors"
+              >
+                About
+              </a>
+            </li>
+            <li>
+              <a
+                href="#contact"
                 className="btn-sm btn-homestead-secondary shadow-sm"
               >
                 Contact Us
-              </Link>
+              </a>
             </li>
             <li>
-              <Link
-                href="/book"
+              <a
+                href="mailto:info@allwayshome.ie"
                 className="btn-sm btn-homestead-primary shadow-sm"
               >
-                Book Service
-              </Link>
+                Get Quote
+              </a>
             </li>
           </ul>
         </div>

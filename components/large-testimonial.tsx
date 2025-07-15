@@ -1,5 +1,16 @@
-import Image from "next/image";
-import TestimonialImg from "@/public/images/large-testimonial.jpg";
+import Image from "next/image";            <p className="text-2xl font-bold text-gray-900">
+              "All Ways Home gave us complete peace of mind during our holiday.
+              Our dogs were so happy, and we came home to a spotless house with thriving plants.
+              <em className="italic text-gray-500"> We wouldn't trust anyone else</em>
+              with our home and pets."
+            </p>
+            <div className="text-sm font-medium text-gray-500">
+              <span className="text-gray-700">Sarah & Michael O'Brien</span>{" "}
+              <span className="text-gray-400">/</span>{" "}
+              <span className="text-homestead-secondary">
+                Cork, Ireland
+              </span>
+            </div>monialImg from "@/public/images/large-testimonial.jpg";
 
 export default function LargeTestimonial() {
   return (

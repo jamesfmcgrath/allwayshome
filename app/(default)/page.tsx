@@ -4,20 +4,20 @@ export const metadata = {
     "Professional house and pet sitting services across Ireland. Peace of mind for your home and beloved pets while you're away.",
 };
 
-import BusinessCategories from '@/components/business-categories';
-import Cta from '@/components/cta';
-import FeaturesPlanet from '@/components/features-planet';
+import AboutUs from '@/components/about-us';
+import Contact from '@/components/contact';
 import Hero from '@/components/hero-home';
-import LargeTestimonial from '@/components/large-testimonial';
+import Services from '@/components/services';
+import Testimonial from '@/components/testimonial';
 
 export default function Home() {
   return (
     <>
       <Hero />
-      <BusinessCategories />
-      <FeaturesPlanet />
-      <LargeTestimonial />
-      <Cta />
+      <Services />
+      <AboutUs />
+      <Testimonial />
+      <Contact />
     </>
   );
 }

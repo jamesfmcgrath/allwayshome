@@ -70,8 +70,8 @@ export default function HeroHome() {
               data-aos="zoom-y-out"
               data-aos-delay={150}
             >
-              Peace of mind for your home <br className="max-lg:hidden" />
-              and beloved pets
+              Trusted House and Pet Sitting <br className="max-lg:hidden" />
+              in Ireland
             </h1>
             <div className="mx-auto max-w-3xl">
               <p
@@ -79,9 +79,8 @@ export default function HeroHome() {
                 data-aos="zoom-y-out"
                 data-aos-delay={300}
               >
-                All Ways Home provides professional house and pet sitting
-                services across Ireland. Your home stays secure and your pets
-                receive loving care while you're away.
+                Reliable, caring, and experienced — your home and pets are in
+                good hands.
               </p>
               <div className="relative before:absolute before:inset-0 before:border-y before:[border-image:linear-gradient(to_right,transparent,--theme(--color-slate-300/.8),transparent)1]">
                 <div
@@ -91,10 +90,10 @@ export default function HeroHome() {
                 >
                   <a
                     className="btn group mb-4 w-full btn-homestead-primary shadow-sm sm:mb-0 sm:w-auto"
-                    href="#0"
+                    href="mailto:info@allwayshome.ie"
                   >
                     <span className="relative inline-flex items-center">
-                      Get Started{' '}
+                      Get in Touch{' '}
                       <span className="ml-1 tracking-normal text-homestead-accent transition-transform group-hover:translate-x-0.5">
                         -&gt;
                       </span>
@@ -102,9 +101,9 @@ export default function HeroHome() {
                   </a>
                   <a
                     className="btn w-full btn-homestead-secondary shadow-sm sm:ml-4 sm:w-auto"
-                    href="#0"
+                    href="#services"
                   >
-                    Learn More
+                    Our Services
                   </a>
                 </div>
               </div>
