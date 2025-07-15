@@ -23,10 +23,37 @@ export default function Contact() {
                 </h3>
                 <form
                   className="space-y-4"
-                  action="mailto:info@allwayshome.ie"
-                  method="post"
-                  encType="text/plain"
+                  action="https://api.web3forms.com/submit"
+                  method="POST"
                 >
+                  {/* Web3Forms Access Key */}
+                  <input
+                    type="hidden"
+                    name="access_key"
+                    value="7295accc-4a5e-4a7e-82be-9eaa59c1a6ba"
+                  />
+
+                  {/* Optional: Redirect after submission */}
+                  <input
+                    type="hidden"
+                    name="redirect"
+                    value="https://web3forms.com/success"
+                  />
+
+                  {/* Optional: Subject line for email */}
+                  <input
+                    type="hidden"
+                    name="subject"
+                    value="New Contact Form Submission from All Ways Home"
+                  />
+
+                  {/* Optional: From name */}
+                  <input
+                    type="hidden"
+                    name="from_name"
+                    value="All Ways Home Contact Form"
+                  />
+
                   <div>
                     <label
                       htmlFor="name"
@@ -72,6 +99,15 @@ export default function Contact() {
                       required
                     />
                   </div>
+
+                  {/* Honeypot field for spam protection */}
+                  <input
+                    type="checkbox"
+                    name="botcheck"
+                    className="hidden"
+                    style={{ display: 'none' }}
+                  />
+
                   <button
                     type="submit"
                     className="w-full btn-homestead-primary py-3 px-6 rounded-md font-medium transition-colors"
