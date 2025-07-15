@@ -111,6 +111,15 @@ export default function Contact() {
       return;
     }
 
+    // Check if Web3Forms API key is configured
+    if (!process.env.NEXT_PUBLIC_WEB3FORMS_KEY) {
+      setSubmitMessage(
+        'Contact form is not properly configured. Please try again later.'
+      );
+      setIsSubmitting(false);
+      return;
+    }
+
     // Add timestamp and user agent for additional spam protection
     formData.append('timestamp', new Date().toISOString());
     formData.append('user_agent', navigator.userAgent);
@@ -169,7 +178,7 @@ export default function Contact() {
                   <input
                     type="hidden"
                     name="access_key"
-                    value="7295accc-4a5e-4a7e-82be-9eaa59c1a6ba"
+                    value={process.env.NEXT_PUBLIC_WEB3FORMS_KEY || ''}
                   />
 
                   {/* Optional: Subject line for email */}

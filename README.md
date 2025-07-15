@@ -38,6 +38,10 @@ We're a mature, experienced couple offering bespoke home and pet care across Ire
 # Install dependencies
 npm install
 
+# Set up environment variables
+cp .env.example .env.local
+# Edit .env.local with your actual API keys
+
 # Run development server
 npm run dev
 
@@ -49,6 +53,18 @@ npm start
 ```
 
 Open [http://localhost:3000](http://localhost:3000) to view the website.
+
+### Environment Variables
+
+Create a `.env.local` file in the root directory with the following variables:
+
+```env
+# Web3Forms API Key
+# Get your API key from https://web3forms.com/
+NEXT_PUBLIC_WEB3FORMS_KEY=your_web3forms_api_key_here
+```
+
+**Important**: Never commit `.env.local` to version control. Use `.env.example` as a template.
 
 ### Project Structure
 
