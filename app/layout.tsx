@@ -53,12 +53,6 @@ export default function RootLayout({
           as="image"
           type="image/svg+xml"
         />
-        <link
-          rel="preload"
-          href="/images/allwayhomehero.png"
-          as="image"
-          type="image/png"
-        />
         <link rel="preconnect" href="https://api.web3forms.com" />
         <link rel="dns-prefetch" href="https://api.web3forms.com" />
       </head>
