@@ -9,6 +9,7 @@ const inter = Inter({
 });
 
 export const metadata = {
+  metadataBase: new URL('https://allwayshome.ie'),
   title: 'All Ways Home – Trusted House & Pet Sitting in Ireland',
   description:
     'Reliable, caring house and pet sitting service in Ireland. Experienced, professional, and personal care for your home and pets.',
