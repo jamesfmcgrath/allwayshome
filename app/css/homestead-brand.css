@@ -1,0 +1,78 @@
+/* All Ways Home Brand Styles */
+
+/* Color variables */
+:root {
+  --homestead-base: #f8f5f2;
+  --homestead-heading: #386641;
+  --homestead-secondary: #6a994e;
+  --homestead-accent: #a7c957;
+  --homestead-section: #f2e8cf;
+}
+
+/* Brand button styles */
+.btn-homestead-primary {
+  background-color: var(--homestead-heading);
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.btn-homestead-primary:hover {
+  background-color: var(--homestead-secondary);
+}
+
+.btn-homestead-secondary {
+  background-color: var(--homestead-section);
+  color: var(--homestead-heading);
+  border: 1px solid var(--homestead-secondary);
+  transition: all 0.3s ease;
+}
+
+.btn-homestead-secondary:hover {
+  background-color: var(--homestead-accent);
+  color: white;
+}
+
+/* Text colors */
+.text-homestead-heading {
+  color: var(--homestead-heading);
+}
+
+.text-homestead-secondary {
+  color: var(--homestead-secondary);
+}
+
+.text-homestead-accent {
+  color: var(--homestead-accent);
+}
+
+/* Background colors */
+.bg-homestead-base {
+  background-color: var(--homestead-base);
+}
+
+.bg-homestead-section {
+  background-color: var(--homestead-section);
+}
+
+/* Smooth transitions for interactive elements */
+.transition-homestead {
+  transition: all 0.3s ease;
+}
+
+/* Custom scrollbar for brand consistency */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--homestead-base);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--homestead-secondary);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--homestead-heading);
+}

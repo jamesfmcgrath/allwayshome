@@ -1,5 +1,5 @@
-import Link from "next/link";
-import Logo from "./logo";
+import Link from 'next/link';
+import Logo from './logo';
 
 export default function Footer({ border = false }: { border?: boolean }) {
   return (
@@ -7,7 +7,7 @@ export default function Footer({ border = false }: { border?: boolean }) {
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         {/* Top area: Blocks */}
         <div
-          className={`grid gap-10 py-8 sm:grid-cols-12 md:py-12 ${border ? "border-t [border-image:linear-gradient(to_right,transparent,var(--color-slate-200),transparent)1]" : ""}`}
+          className={`grid gap-10 py-8 sm:grid-cols-12 md:py-12 ${border ? 'border-t [border-image:linear-gradient(to_right,transparent,var(--color-slate-200),transparent)1]' : ''}`}
         >
           {/* 1st block */}
           <div className="space-y-2 sm:col-span-12 lg:col-span-4">
@@ -15,52 +15,55 @@ export default function Footer({ border = false }: { border?: boolean }) {
               <Logo />
             </div>
             <div className="text-sm text-gray-600">
-              &copy; Cruip.com - All rights reserved.
+              &copy; All Ways Home - Professional house and pet sitting services
+              across Ireland.
             </div>
           </div>
 
           {/* 2nd block */}
           <div className="space-y-2 sm:col-span-6 md:col-span-3 lg:col-span-2">
-            <h3 className="text-sm font-medium">Product</h3>
+            <h3 className="text-sm font-medium text-homestead-heading">
+              Services
+            </h3>
             <ul className="space-y-2 text-sm">
               <li>
                 <Link
-                  className="text-gray-600 transition hover:text-gray-900"
+                  className="text-gray-600 transition hover:text-homestead-heading"
                   href="#0"
                 >
-                  Features
+                  House Sitting
                 </Link>
               </li>
               <li>
                 <Link
-                  className="text-gray-600 transition hover:text-gray-900"
+                  className="text-gray-600 transition hover:text-homestead-heading"
                   href="#0"
                 >
-                  Integrations
+                  Pet Sitting
                 </Link>
               </li>
               <li>
                 <Link
-                  className="text-gray-600 transition hover:text-gray-900"
+                  className="text-gray-600 transition hover:text-homestead-heading"
                   href="#0"
                 >
-                  Pricing & Plans
+                  Dog Walking
                 </Link>
               </li>
               <li>
                 <Link
-                  className="text-gray-600 transition hover:text-gray-900"
+                  className="text-gray-600 transition hover:text-homestead-heading"
                   href="#0"
                 >
-                  Changelog
+                  Plant Care
                 </Link>
               </li>
               <li>
                 <Link
-                  className="text-gray-600 transition hover:text-gray-900"
+                  className="text-gray-600 transition hover:text-homestead-heading"
                   href="#0"
                 >
-                  Our method
+                  Mail Collection
                 </Link>
               </li>
             </ul>
@@ -68,46 +71,48 @@ export default function Footer({ border = false }: { border?: boolean }) {
 
           {/* 3rd block */}
           <div className="space-y-2 sm:col-span-6 md:col-span-3 lg:col-span-2">
-            <h3 className="text-sm font-medium">Company</h3>
+            <h3 className="text-sm font-medium text-homestead-heading">
+              Company
+            </h3>
             <ul className="space-y-2 text-sm">
               <li>
                 <Link
-                  className="text-gray-600 transition hover:text-gray-900"
+                  className="text-gray-600 transition hover:text-homestead-heading"
                   href="#0"
                 >
-                  About us
+                  About Us
                 </Link>
               </li>
               <li>
                 <Link
-                  className="text-gray-600 transition hover:text-gray-900"
+                  className="text-gray-600 transition hover:text-homestead-heading"
                   href="#0"
                 >
-                  Diversity & Inclusion
+                  Why Choose Us
                 </Link>
               </li>
               <li>
                 <Link
-                  className="text-gray-600 transition hover:text-gray-900"
+                  className="text-gray-600 transition hover:text-homestead-heading"
                   href="#0"
                 >
-                  Blog
+                  Testimonials
                 </Link>
               </li>
               <li>
                 <Link
-                  className="text-gray-600 transition hover:text-gray-900"
+                  className="text-gray-600 transition hover:text-homestead-heading"
                   href="#0"
                 >
-                  Careers
+                  Insurance
                 </Link>
               </li>
               <li>
                 <Link
-                  className="text-gray-600 transition hover:text-gray-900"
+                  className="text-gray-600 transition hover:text-homestead-heading"
                   href="#0"
                 >
-                  Financial statements
+                  Coverage Areas
                 </Link>
               </li>
             </ul>
@@ -115,30 +120,48 @@ export default function Footer({ border = false }: { border?: boolean }) {
 
           {/* 4th block */}
           <div className="space-y-2 sm:col-span-6 md:col-span-3 lg:col-span-2">
-            <h3 className="text-sm font-medium">Resources</h3>
+            <h3 className="text-sm font-medium text-homestead-heading">
+              Support
+            </h3>
             <ul className="space-y-2 text-sm">
               <li>
                 <Link
-                  className="text-gray-600 transition hover:text-gray-900"
+                  className="text-gray-600 transition hover:text-homestead-heading"
                   href="#0"
                 >
-                  Community
+                  Contact Us
                 </Link>
               </li>
               <li>
                 <Link
-                  className="text-gray-600 transition hover:text-gray-900"
+                  className="text-gray-600 transition hover:text-homestead-heading"
                   href="#0"
                 >
-                  Terms of service
+                  FAQ
                 </Link>
               </li>
               <li>
                 <Link
-                  className="text-gray-600 transition hover:text-gray-900"
+                  className="text-gray-600 transition hover:text-homestead-heading"
                   href="#0"
                 >
-                  Report a vulnerability
+                  Terms of Service
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className="text-gray-600 transition hover:text-homestead-heading"
+                  href="#0"
+                >
+                  Privacy Policy
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className="text-gray-600 transition hover:text-homestead-heading"
+                  href="#0"
+                >
+                  Emergency Contact
                 </Link>
               </li>
             </ul>
@@ -146,41 +169,45 @@ export default function Footer({ border = false }: { border?: boolean }) {
 
           {/* 5th block */}
           <div className="space-y-2 sm:col-span-6 md:col-span-3 lg:col-span-2">
-            <h3 className="text-sm font-medium">Social</h3>
+            <h3 className="text-sm font-medium text-homestead-heading">
+              Connect
+            </h3>
             <ul className="flex gap-1">
               <li>
                 <Link
-                  className="flex items-center justify-center text-blue-500 transition hover:text-blue-600"
+                  className="flex items-center justify-center text-homestead-secondary transition hover:text-homestead-heading"
                   href="#0"
-                  aria-label="Twitter"
+                  aria-label="Facebook"
                 >
                   <svg
                     className="h-8 w-8 fill-current"
                     viewBox="0 0 32 32"
                     xmlns="http://www.w3.org/2000/svg"
                   >
-                    <path d="m13.063 9 3.495 4.475L20.601 9h2.454l-5.359 5.931L24 23h-4.938l-3.866-4.893L10.771 23H8.316l5.735-6.342L8 9h5.063Zm-.74 1.347h-1.457l8.875 11.232h1.36l-8.778-11.232Z"></path>
+                    <path d="M14.023 24L14 17h-3v-3h3v-2c0-2.7 1.672-4 4.08-4 1.153 0 2.144.086 2.433.124v2.821h-1.67c-1.31 0-1.563.623-1.563 1.536V14H21l-1 3h-2.72v7h-3.257z"></path>
                   </svg>
                 </Link>
               </li>
               <li>
                 <Link
-                  className="flex items-center justify-center text-blue-500 transition hover:text-blue-600"
+                  className="flex items-center justify-center text-homestead-secondary transition hover:text-homestead-heading"
                   href="#0"
-                  aria-label="Medium"
+                  aria-label="Instagram"
                 >
                   <svg
                     className="h-8 w-8 fill-current"
                     viewBox="0 0 32 32"
                     xmlns="http://www.w3.org/2000/svg"
                   >
-                    <path d="M23 8H9a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1Zm-1.708 3.791-.858.823a.251.251 0 0 0-.1.241V18.9a.251.251 0 0 0 .1.241l.838.823v.181h-4.215v-.181l.868-.843c.085-.085.085-.11.085-.241v-4.887l-2.41 6.131h-.329l-2.81-6.13V18.1a.567.567 0 0 0 .156.472l1.129 1.37v.181h-3.2v-.181l1.129-1.37a.547.547 0 0 0 .146-.472v-4.749a.416.416 0 0 0-.138-.351l-1-1.209v-.181H13.8l2.4 5.283 2.122-5.283h2.971l-.001.181Z"></path>
+                    <circle cx="20.145" cy="11.892" r="1"></circle>
+                    <path d="M16 20a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm0-6a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"></path>
+                    <path d="M20 24h-8a4 4 0 0 1-4-4v-8a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4zM12 10a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2v-8a2 2 0 0 0-2-2h-8z"></path>
                   </svg>
                 </Link>
               </li>
               <li>
                 <Link
-                  className="flex items-center justify-center text-blue-500 transition hover:text-blue-600"
+                  className="flex items-center justify-center text-homestead-secondary transition hover:text-homestead-heading"
                   href="#0"
                   aria-label="Github"
                 >

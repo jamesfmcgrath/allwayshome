@@ -1,0 +1,9 @@
+<!-- This is a placeholder for the All Ways Home logo -->
+<!-- The logo should combine a house icon with a paw print -->
+<!-- Dimensions: 64x64 pixels -->
+<!-- Colors: #386641 (primary), #a7c957 (accent) -->
+<!-- Background: transparent -->
+
+This file serves as a placeholder for allwayshomelogo.png
+The actual logo should be created by a designer and placed at:
+/public/images/allwayshomelogo.png
