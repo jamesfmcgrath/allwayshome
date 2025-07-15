@@ -3,14 +3,10 @@ import Link from 'next/link';
 
 export default function Logo() {
   return (
-    <Link
-      href="/"
-      className="inline-flex items-center gap-2"
-      aria-label="All Ways Home"
-    >
+    <Link href="/" className="inline-flex items-center gap-2">
       <Image
         src="/images/allwayshomelogo.svg"
-        alt="All Ways Home Logo"
+        alt=""
         width={32}
         height={32}
         className="w-8 h-8"

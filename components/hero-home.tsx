@@ -59,9 +59,9 @@ export default function HeroHome() {
             <div className="relative rounded-2xl px-5 py-3 shadow-xl bg-homestead-section">
               <div className="relative mb-4 flex items-center justify-center">
                 <div className="text-center">
-                  <h3 className="text-2xl font-bold mb-4 text-homestead-heading">
+                  <h2 className="text-2xl font-bold mb-4 text-homestead-heading">
                     🏠 + 🐾 = ❤️
-                  </h3>
+                  </h2>
                   <p className="text-lg text-homestead-secondary">
                     Your home secure, your pets happy
                   </p>

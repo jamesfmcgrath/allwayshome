@@ -194,15 +194,21 @@ export default function Contact() {
                     style={{ display: 'none' }}
                     tabIndex={-1}
                     autoComplete="off"
+                    aria-hidden="true"
                   />
 
                   {/* Hidden field that should remain empty */}
                   <div style={{ position: 'absolute', left: '-9999px' }}>
+                    <label htmlFor="website" className="sr-only">
+                      Leave this field empty
+                    </label>
                     <input
                       type="text"
+                      id="website"
                       name="website"
                       tabIndex={-1}
                       autoComplete="off"
+                      aria-hidden="true"
                     />
                   </div>
 
