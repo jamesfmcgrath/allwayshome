@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import {
   getProtectedEmail,
   hasExcessiveLinks,
@@ -23,7 +23,7 @@ export default function Contact() {
   };
 
   // Generate simple math question for human verification
-  const generateMathQuestion = () => {
+  const generateMathQuestion = useCallback(() => {
     const num1 = Math.floor(Math.random() * 10) + 1;
     const num2 = Math.floor(Math.random() * 10) + 1;
     const operations = ['+', '-'];
@@ -41,11 +41,11 @@ export default function Contact() {
     }
 
     setMathQuestion({ question, answer });
-  };
+  }, []);
 
   useEffect(() => {
     generateMathQuestion();
-  }, []);
+  }, [generateMathQuestion]);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();

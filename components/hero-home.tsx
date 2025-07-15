@@ -56,7 +56,7 @@ export default function HeroHome() {
             data-aos="zoom-y-out"
             data-aos-delay={600}
           >
-            <div className="relative rounded-2xl px-5 py-3 shadow-xl bg-homestead-section">
+            <div className="relative rounded-2xl px-5 py-3 shadow-xl bg-homestead-section min-h-[200px]">
               <div className="relative mb-4 flex items-center justify-center">
                 <div className="text-center">
                   <h2 className="text-2xl font-bold mb-4 text-homestead-heading">

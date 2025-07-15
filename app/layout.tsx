@@ -46,6 +46,22 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-smooth" suppressHydrationWarning={true}>
+      <head>
+        <link
+          rel="preload"
+          href="/images/allwayshomelogo.svg"
+          as="image"
+          type="image/svg+xml"
+        />
+        <link
+          rel="preload"
+          href="/images/allwayhomehero.png"
+          as="image"
+          type="image/png"
+        />
+        <link rel="preconnect" href="https://api.web3forms.com" />
+        <link rel="dns-prefetch" href="https://api.web3forms.com" />
+      </head>
       <body
         className={`${inter.variable} font-inter tracking-tight text-gray-900 antialiased`}
         style={{ backgroundColor: '#f8f5f2' }}

@@ -10,6 +10,7 @@ export default function Logo() {
         width={32}
         height={32}
         className="w-8 h-8"
+        priority
       />
       <span className="text-lg sm:text-xl font-bold text-homestead-heading">
         All Ways Home
