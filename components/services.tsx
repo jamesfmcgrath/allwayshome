@@ -16,55 +16,55 @@ export default function Services() {
           {/* Services grid */}
           <div className="mx-auto max-w-sm items-start gap-6 sm:max-w-none sm:grid sm:grid-cols-2 lg:grid-cols-4">
             {/* Pet Care */}
-            <div className="group mb-8 bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow sm:mb-0">
+            <div className="group mb-8 bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow sm:mb-0 h-full flex flex-col">
               <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-homestead-heading">
                 <span className="text-2xl">🐾</span>
               </div>
               <h3 className="mb-2 text-xl font-bold text-homestead-heading">
                 Pet Care
               </h3>
-              <p className="text-gray-700">
+              <p className="text-gray-700 flex-grow">
                 Feeding, walks, companionship, and love for your furry family
                 members
               </p>
             </div>
 
             {/* House Care */}
-            <div className="group mb-8 bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow sm:mb-0">
+            <div className="group mb-8 bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow sm:mb-0 h-full flex flex-col">
               <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-homestead-heading">
                 <span className="text-2xl">🏠</span>
               </div>
               <h3 className="mb-2 text-xl font-bold text-homestead-heading">
                 House Care
               </h3>
-              <p className="text-gray-700">
+              <p className="text-gray-700 flex-grow">
                 Plants, bins, laundry, post collection, and maintaining your
                 home
               </p>
             </div>
 
             {/* Security Presence */}
-            <div className="group mb-8 bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow sm:mb-0">
+            <div className="group mb-8 bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow sm:mb-0 h-full flex flex-col">
               <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-homestead-heading">
                 <span className="text-2xl">🔒</span>
               </div>
               <h3 className="mb-2 text-xl font-bold text-homestead-heading">
                 Security Presence
               </h3>
-              <p className="text-gray-700">
+              <p className="text-gray-700 flex-grow">
                 Occupied look for your home, giving you complete peace of mind
               </p>
             </div>
 
             {/* Custom Extras */}
-            <div className="group mb-8 bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow sm:mb-0">
+            <div className="group mb-8 bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow sm:mb-0 h-full flex flex-col">
               <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-homestead-heading">
                 <span className="text-2xl">⭐</span>
               </div>
               <h3 className="mb-2 text-xl font-bold text-homestead-heading">
                 Custom Extras
               </h3>
-              <p className="text-gray-700">
+              <p className="text-gray-700 flex-grow">
                 We adapt to your specific needs and requirements
               </p>
             </div>
