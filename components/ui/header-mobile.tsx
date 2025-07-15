@@ -66,19 +66,30 @@ export default function Header() {
               stroke="currentColor"
               viewBox="0 0 24 24"
             >
-              {mobileMenuOpen ? (
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-              ) : (
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-              )}
+              {mobileMenuOpen ?
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              : <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              }
             </svg>
           </button>
         </div>
 
         {/* Mobile menu */}
         {mobileMenuOpen && (
-          <div className="lg:hidden mt-2 rounded-2xl shadow-lg shadow-black/[0.03] backdrop-blur-xs overflow-hidden"
-               style={{ backgroundColor: 'rgba(248, 245, 242, 0.95)' }}>
+          <div
+            className="lg:hidden mt-2 rounded-2xl shadow-lg shadow-black/[0.03] backdrop-blur-xs overflow-hidden"
+            style={{ backgroundColor: 'rgba(248, 245, 242, 0.95)' }}
+          >
             <div className="px-4 py-3 space-y-3">
               <a
                 href="#services"
@@ -111,11 +122,6 @@ export default function Header() {
             </div>
           </div>
         )}
-      </div>
-    </header>
-  );
-}
-        </div>
       </div>
     </header>
   );
