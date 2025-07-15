@@ -23,10 +23,10 @@ export const metadata = {
     siteName: 'All Ways Home',
     images: [
       {
-        url: '/images/allwayshomelogo.png',
+        url: '/images/allwayhomehero.png',
         width: 1200,
         height: 630,
-        alt: 'All Ways Home - Trusted House & Pet Sitting in Ireland',
+        alt: 'All Ways Home - Professional house and pet sitting services in beautiful Irish countryside',
       },
     ],
   },
@@ -35,7 +35,7 @@ export const metadata = {
     title: 'All Ways Home – Trusted House & Pet Sitting in Ireland',
     description:
       'Reliable, caring house and pet sitting service in Ireland. Experienced, professional, and personal care for your home and pets.',
-    images: ['/images/allwayshomelogo.png'],
+    images: ['/images/allwayhomehero.png'],
   },
 };
 
