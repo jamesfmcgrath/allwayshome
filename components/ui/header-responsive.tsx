@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import Logo from './logo';
+import { simpleAnalytics } from './simple-analytics';
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -29,6 +30,12 @@ export default function Header() {
               <a
                 href="#services"
                 className="text-sm font-medium text-gray-700 hover:text-homestead-heading transition-colors"
+                onClick={() =>
+                  simpleAnalytics.track('nav_click', {
+                    section: 'services',
+                    device: 'desktop',
+                  })
+                }
               >
                 Services
               </a>
@@ -37,6 +44,12 @@ export default function Header() {
               <a
                 href="#about"
                 className="text-sm font-medium text-gray-700 hover:text-homestead-heading transition-colors"
+                onClick={() =>
+                  simpleAnalytics.track('nav_click', {
+                    section: 'about',
+                    device: 'desktop',
+                  })
+                }
               >
                 About
               </a>
@@ -45,6 +58,12 @@ export default function Header() {
               <a
                 href="#contact"
                 className="btn-sm btn-homestead-secondary shadow-sm"
+                onClick={() =>
+                  simpleAnalytics.track('nav_click', {
+                    section: 'contact',
+                    device: 'desktop',
+                  })
+                }
               >
                 Contact Us
               </a>
@@ -55,7 +74,14 @@ export default function Header() {
           {mounted && (
             <button
               className="lg:hidden flex items-center justify-center w-8 h-8 rounded-md hover:bg-homestead-section transition-colors"
-              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              onClick={() => {
+                const newState = !mobileMenuOpen;
+                setMobileMenuOpen(newState);
+                simpleAnalytics.track('mobile_menu_toggle', {
+                  action: newState ? 'open' : 'close',
+                  timestamp: new Date().toISOString(),
+                });
+              }}
               aria-label="Toggle mobile menu"
             >
               <svg
@@ -93,21 +119,39 @@ export default function Header() {
               <a
                 href="#services"
                 className="block text-sm font-medium text-gray-700 hover:text-homestead-heading transition-colors py-2"
-                onClick={() => setMobileMenuOpen(false)}
+                onClick={() => {
+                  setMobileMenuOpen(false);
+                  simpleAnalytics.track('nav_click', {
+                    section: 'services',
+                    device: 'mobile',
+                  });
+                }}
               >
                 Services
               </a>
               <a
                 href="#about"
                 className="block text-sm font-medium text-gray-700 hover:text-homestead-heading transition-colors py-2"
-                onClick={() => setMobileMenuOpen(false)}
+                onClick={() => {
+                  setMobileMenuOpen(false);
+                  simpleAnalytics.track('nav_click', {
+                    section: 'about',
+                    device: 'mobile',
+                  });
+                }}
               >
                 About
               </a>
               <a
                 href="#contact"
                 className="block text-center btn-sm btn-homestead-secondary shadow-sm mt-3"
-                onClick={() => setMobileMenuOpen(false)}
+                onClick={() => {
+                  setMobileMenuOpen(false);
+                  simpleAnalytics.track('nav_click', {
+                    section: 'contact',
+                    device: 'mobile',
+                  });
+                }}
               >
                 Contact Us
               </a>

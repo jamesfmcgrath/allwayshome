@@ -8,6 +8,7 @@ import {
   isLikelySpam,
   validateEmail,
 } from '../utils/email-protection';
+import { simpleAnalytics } from './ui/simple-analytics';
 
 export default function Contact() {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -137,15 +138,35 @@ export default function Contact() {
         setUserAnswer('');
         setLastSubmission(now);
         generateMathQuestion();
+
+        // Track successful form submission
+        simpleAnalytics.track('contact_form_submitted', {
+          success: true,
+          timestamp: new Date().toISOString(),
+        });
       } else {
         setSubmitMessage(
           'Sorry, there was an error sending your message. Please try again.'
         );
+
+        // Track failed form submission
+        simpleAnalytics.track('contact_form_submitted', {
+          success: false,
+          error: 'api_error',
+          timestamp: new Date().toISOString(),
+        });
       }
     } catch (error) {
       setSubmitMessage(
         'Sorry, there was an error sending your message. Please try again.'
       );
+
+      // Track failed form submission
+      simpleAnalytics.track('contact_form_submitted', {
+        success: false,
+        error: 'network_error',
+        timestamp: new Date().toISOString(),
+      });
     }
 
     setIsSubmitting(false);
@@ -335,7 +356,12 @@ export default function Contact() {
                       </h4>
                       {!showEmail ?
                         <button
-                          onClick={() => setShowEmail(true)}
+                          onClick={() => {
+                            setShowEmail(true);
+                            simpleAnalytics.track('email_revealed', {
+                              timestamp: new Date().toISOString(),
+                            });
+                          }}
                           className="text-homestead-secondary hover:text-homestead-heading cursor-pointer bg-transparent border-none underline text-left p-0"
                         >
                           Click to reveal email
@@ -344,6 +370,11 @@ export default function Contact() {
                           <a
                             href={`mailto:${getObfuscatedEmail()}`}
                             className="text-homestead-secondary hover:text-homestead-heading block"
+                            onClick={() => {
+                              simpleAnalytics.track('email_clicked', {
+                                timestamp: new Date().toISOString(),
+                              });
+                            }}
                           >
                             {getObfuscatedEmail()}
                           </a>

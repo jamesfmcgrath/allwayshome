@@ -55,6 +55,12 @@ export default function RootLayout({
         />
         <link rel="preconnect" href="https://api.web3forms.com" />
         <link rel="dns-prefetch" href="https://api.web3forms.com" />
+        <script
+          async
+          defer
+          data-mode="eu"
+          src="https://scripts.simpleanalyticscdn.com/latest.js"
+        ></script>
       </head>
       <body
         className={`${inter.variable} font-inter tracking-tight text-gray-900 antialiased`}
