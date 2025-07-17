@@ -348,49 +348,6 @@ export default function Contact() {
                 <div className="space-y-6">
                   <div className="flex items-start space-x-4">
                     <div className="flex h-10 w-10 items-center justify-center rounded-full bg-homestead-heading">
-                      <span className="text-white">📧</span>
-                    </div>
-                    <div>
-                      <h4 className="font-medium text-homestead-heading">
-                        Email
-                      </h4>
-                      {!showEmail ?
-                        <button
-                          onClick={() => {
-                            setShowEmail(true);
-                            simpleAnalytics.track('email_revealed', {
-                              timestamp: new Date().toISOString(),
-                            });
-                          }}
-                          className="text-homestead-secondary hover:text-homestead-heading cursor-pointer bg-transparent border-none underline text-left p-0"
-                        >
-                          Click to reveal email
-                        </button>
-                      : <div className="space-y-2">
-                          <a
-                            href={`mailto:${getObfuscatedEmail()}`}
-                            className="text-homestead-secondary hover:text-homestead-heading block"
-                            onClick={() => {
-                              simpleAnalytics.track('email_clicked', {
-                                timestamp: new Date().toISOString(),
-                              });
-                            }}
-                          >
-                            {getObfuscatedEmail()}
-                          </a>
-                          <button
-                            onClick={() => setShowEmail(false)}
-                            className="text-sm text-gray-500 hover:text-gray-700 cursor-pointer bg-transparent border-none underline text-left p-0"
-                          >
-                            Hide email
-                          </button>
-                        </div>
-                      }
-                    </div>
-                  </div>
-
-                  <div className="flex items-start space-x-4">
-                    <div className="flex h-10 w-10 items-center justify-center rounded-full bg-homestead-heading">
                       <span className="text-white">🇮🇪</span>
                     </div>
                     <div>
