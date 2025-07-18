@@ -19,7 +19,13 @@ export default function LargeTestimonial() {
               <span className="text-gray-700">Roxanne</span>{' '}
               <span className="text-gray-400">/</span>{' '}
               <span className="text-homestead-secondary">
-                TrustedHousesitters.com
+                <a
+                  href="https://www.trustedhousesitters.com/house-and-pet-sitters/ireland/connaught/westport/l/1348690/?"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  TrustedHousesitters.com
+                </a>
               </span>
             </div>
           </div>
